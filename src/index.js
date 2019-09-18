@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom'
+import { HashRouter as Router } from "react-router-dom"
+import App from './App'
 
-const title = 'min-react-demo 啦啦';
 
-ReactDOM.render(
-  <div>{title}</div>,
+render(
+  <Router><App/></Router>,
   document.getElementById('app')
 );
 
