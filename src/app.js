@@ -1,7 +1,7 @@
 import React from 'react'
 import Router from './components/Router'
 import routes from './router'
-import { TransitionGroup, CSSTransition } from "react-transition-group"
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import './style/index.less'
 
 export default class App extends React.Component {

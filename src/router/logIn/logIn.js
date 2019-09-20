@@ -5,8 +5,7 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      userName: '',
-      password: ''
+      aaa: 1
     }
 	}
   async componentDidMount () {}
@@ -16,9 +15,11 @@ export default class Index extends React.Component {
   }
 
   render() {
+    let { aaa } = this.state
     return (
       <div className="container login" onClick={() => this.handleToHome()}>
         login
+        {aaa ? '1' : 2}
       </div>
     )
   }
